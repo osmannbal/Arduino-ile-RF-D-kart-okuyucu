@@ -9,6 +9,7 @@ int servoPin = 8;
 Servo motor;
 MFRC522 rfid(ssPin, rstPin);
 byte ID[4] = {0,0,0,0};
+
 void setup() {
   motor.attach(8);
   Serial.begin(9600);
